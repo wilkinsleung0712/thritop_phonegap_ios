@@ -23,7 +23,7 @@
       </div>
     </div>
     <!-- Right panel with cover effect-->
-    <div class="panel panel-right panel-cover">
+    <div class="panel buttonpanel-right panel-reveal">
       <div class="content-block">
         <p>Right panel content goes here</p>
       </div>
@@ -35,8 +35,12 @@
         <!-- Top Navbar-->
         <div class="navbar">
           <div class="navbar-inner">
+            <div class="left sliding">
+              <!-- Right link contains only icon - additional "icon-only" class-->
+              <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
             <!-- We have home navbar without left link-->
-            <div class="center sliding">Awesome App</div>
+            <div class="center sliding">Thritop App</div>
             <div class="right">
               <!-- Right link contains only icon - additional "icon-only" class-->
               <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
@@ -49,73 +53,50 @@
           <!-- Page, data-page contains page name-->
           <div data-page="index" class="page">
             <!-- Scrollable page content-->
-            <div class="page-content">
-              <div class="content-block-title">Welcome To My Awesome App</div>
-              <div class="content-block">
-                <div class="content-block-inner">
-                    <!-- Slider -->
-                    <div class="swiper-container">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide"><span>Slide 1</span></div>
-                        <div class="swiper-slide"><span>Slide 2</span></div>
-                        <div class="swiper-slide"><span>Slide 3</span></div>
-                        <div class="swiper-slide"><span>Slide 4</span></div>
-                      </div>
-                      <div class="swiper-pagination"></div>
-                    </div>
-                    <a class="left carousel-control" href="#carousel-example" data-slide="prev"><i class="icon-prev  fa fa-angle-left"></i></a>
-                    <a class="right carousel-control" href="#carousel-example" data-slide="next"><i class="icon-next fa fa-angle-right"></i></a>
+          <div class="content-block">
+              <div data-page="swiper-horizontal" class="content-block-inner" style="padding-top: 44px;">
+              <div data-pagination=".swiper-pagination" data-pagination-hide="true" class="swiper-container swiper-init ks-demo-slider">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
                   </div>
                 </div>
-              </div>
-              <div class="content-block-title">What about simple navigation?</div>
-              <div class="list-block">
-                <ul>
-                  <li>
-                    <a href="about.html" class="item-link">
-                      <div class="item-content">
-                        <div class="item-inner">
-                          <div class="item-title">About</div>
-                        </div>
-                      </div></a>
-                  </li>
-                  <li>
-                    <a href="services.html" class="item-link">
-                      <div class="item-content">
-                        <div class="item-inner">
-                          <div class="item-title">Services</div>
-                        </div>
-                      </div></a>
-                  </li>
-                  <li>
-                    <a href="form.html" class="item-link">
-                      <div class="item-content">
-                        <div class="item-inner">
-                          <div class="item-title">Form</div>
-                        </div>
-                      </div></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="content-block-title">Side panels</div>
-              <div class="content-block">
-                <div class="row">
+            </div>
+            <div class="content-block">
+                <div class="row" style="height: 28%;">
                   <div class="col-50">
-                    <a href="#" data-panel="left" class="button open-panel">Left Panel</a>
+                    <a href="cleaning.html" class="main-UI-button button-big item-link" style="width: 100%;">
+                    <img src="http://lorempixel.com/160/160/people/2" width="100%"/>
+                    </a>
                   </div>
                   <div class="col-50">
-                    <a href="#" data-panel="right" class="button open-panel">Right Panel</a>
+                    <a href="about.html" class="main-UI-button button-big">
+                    <img src="http://lorempixel.com/160/160/people/2" width="100%"/>
+                    </a>
+                  </div>
+                </div>
+                <div class="row" style="height: 28%;">
+                  <div class="col-50">
+                    <a href="#" class="main-UI-button button-big" style="width: 100%;">
+                    <img src="http://lorempixel.com/160/160/people/2" width="100%"/>
+                    </a>
+                  </div>
+                  <div class="col-50">
+                    <a href="#" class="main-UI-button button-big">
+                    <img src="http://lorempixel.com/160/160/people/2" width="100%"/>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Bottom Toolbar-->
-        <div class="toolbar">
-          <div class="toolbar-inner">
-            <a href="#" class="link">Link 1</a>
-            <a href="#" class="link">Link 2</a>
+        <!-- Bottom Tabbar-->
+          <div class="toolbar tabbar tabbar-labels">
+            <div class="toolbar-inner"><a href="#view-1" class="tab-link active"> <i class="icon tabbar-demo-icon-1"></i><span class="tabbar-label">Information</span></a><a href="#view-2" class="tab-link"><i class="icon tabbar-demo-icon-2"></i><span class="tabbar-label">Inbox</span></a><a href="#view-3" class="tab-link"> <i class="icon tabbar-demo-icon-3"><span class="badge bg-red">4</span></i><span class="tabbar-label">Upload</span></a><a href="#view-4" class="tab-link"> <i class="icon tabbar-demo-icon-4"></i><span class="tabbar-label">Photos</span></a></div>
           </div>
         </div>
       </div>
