@@ -17,7 +17,6 @@ myApp.onPageInit('about', function (page) {
         createContentPage();
     });
 });
-var myApp = new Framework7();
 
  // Init slider and store its instance in mySwiper variable
  var mySwiper = myApp.swiper('.swiper-container', {
@@ -63,3 +62,64 @@ function createContentPage() {
 //         }
 //     ]
 // });
+
+
+/* ===== Pickers ===== */
+myApp.onPageInit('pickers', function (page) {
+    var today = new Date();
+
+    // iOS Device picker
+    var pickerDevice = myApp.picker({
+        input: '#ks-picker-device',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['iPhone 4', 'iPhone 4S', 'iPhone 5', 'iPhone 5S', 'iPhone 6', 'iPhone 6 Plus', 'iPad 2', 'iPad Retina', 'iPad Air', 'iPad mini', 'iPad mini 2', 'iPad mini 3']
+            }
+        ]
+    });
+
+    //房屋类型
+    var pickerHousetype = myApp.picker({
+        input: '#tt-picker-house-type',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['House', 'Townhouse', 'Apartment', 'Unit']
+            }
+        ]
+    });
+
+    //数量
+    var pickerSleepnum = myApp.picker({
+        input: '#tt-picker-sleep-num',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['1', '2','3','4','5','6']
+            }
+        ]
+    });
+
+    //数量
+    var pickerDiningroomnum = myApp.picker({
+        input: '#tt-picker-dinning-room-num',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['1', '2','3','4','5','6']
+            }
+        ]
+    });
+
+    //数量
+    var pickerShowerroomnum = myApp.picker({
+        input: '#tt-picker-shower-room-num',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['1', '2','3','4','5','6']
+            }
+        ]
+    });
+});
