@@ -1,0 +1,289 @@
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left">
+      <a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a>
+    </div>
+    <div class="center sliding">About</div>
+    <div class="right">
+      <a href="generalQuestionary.html" class="next link"> <span>Next</span></a>
+    </div>
+  </div>
+</div>
+<div data-page="pickers" class="page">
+  <div class="page-content">
+      <div class="toolbar tabbar">
+        <div class="toolbar-inner">
+            <a href="#tab1" class="active tab-link">搬家</a>
+            <a href="#tab2" class="tab-link">送货取货</a>
+            <a href="#tab3" class="tab-link">垃圾处理</a></div>
+      </div>
+        <div class="tabs">
+          <div id="tab1" class="tab active">
+              <div class="content-block-title">Time</div>
+            <div class="list-block">
+              <ul>
+                <li>
+                    
+                  <div class="item-content">
+        <div class="item-inner">
+          <div class="item-input">
+            <input type="datetime-local">
+          </div>
+        </div>
+      </div>
+                </li>
+              </ul>
+            </div>
+            <div class="content-block-title">现在住址</div>
+            <div class="list-block">
+              <ul>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-input">
+            <input type="text" placeholder="Current Address">
+          </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="content-block-title">搬去住址</div>
+            <div class="list-block">
+              <ul>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-input">
+            <input type="text" placeholder="New Address">
+          </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="content-block-title">所需车型</div>
+            <div class="list-block">
+              <ul>
+                <!-- Single chekbox item -->
+                <li>
+                  <label class="label-checkbox item-content">
+                    <!-- Checked by default -->
+                    <input type="checkbox" name="my-checkbox" value="Books" checked="checked">
+                    <div class="item-media">
+                      <i class="icon icon-form-checkbox"></i>
+                    </div>
+                    <div class="item-inner">
+                      <div class="item-title">2 Tone Van</div>
+                    </div>
+                  </label>
+                </li>
+                <!-- Another chekbox item -->
+                <li>
+                  <label class="label-checkbox item-content">
+                    <input type="checkbox" name="my-checkbox" value="Movies">
+                    <div class="item-media">
+                      <i class="icon icon-form-checkbox"></i>
+                    </div>
+                    <div class="item-inner">
+                      <div class="item-title">4.5 Tone Track</div>
+                    </div>
+                  </label>
+                </li>
+                </div>
+            <div class="content-block-title">所需搬运工</div>
+            <div class="list-block">
+              <ul>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-input">
+                        <input type="text" placeholder="Any" readonly="readonly" id="tt-picker-sleep-num" />
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="tab2" class="tab">
+            <div class="content-block-title">Time</div>
+            <div class="list-block">
+              <ul>
+                <li>
+                    
+                  <div class="item-content">
+        <div class="item-inner">
+          <div class="item-input">
+            <input type="datetime-local">
+          </div>
+        </div>
+      </div>
+                </li>
+              </ul>
+            </div>
+            <div class="content-block-title">现在住址</div>
+            <div class="list-block">
+              <ul>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-input">
+            <input type="text" placeholder="Current Address">
+          </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="content-block-title">搬去住址</div>
+            <div class="list-block">
+              <ul>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-input">
+            <input type="text" placeholder="New Address">
+          </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="content-block-title">所需车型</div>
+            <div class="list-block">
+              <ul>
+                <!-- Single chekbox item -->
+                <li>
+                  <label class="label-checkbox item-content">
+                    <!-- Checked by default -->
+                    <input type="checkbox" name="my-checkbox" value="Books" checked="checked">
+                    <div class="item-media">
+                      <i class="icon icon-form-checkbox"></i>
+                    </div>
+                    <div class="item-inner">
+                      <div class="item-title">2 Tone Van</div>
+                    </div>
+                  </label>
+                </li>
+                <!-- Another chekbox item -->
+                <li>
+                  <label class="label-checkbox item-content">
+                    <input type="checkbox" name="my-checkbox" value="Movies">
+                    <div class="item-media">
+                      <i class="icon icon-form-checkbox"></i>
+                    </div>
+                    <div class="item-inner">
+                      <div class="item-title">4.5 Tone Track</div>
+                    </div>
+                  </label>
+                </li>
+                </div>
+            <div class="content-block-title">所需搬运工</div>
+            <div class="list-block">
+              <ul>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-input">
+                        <input type="text" placeholder="Any" readonly="readonly" id="tt-picker-sleep-num" />
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="tab3" class="tab">
+              <div class="content-block-title">Time</div>
+            <div class="list-block">
+              <ul>
+                <li>
+                    
+                  <div class="item-content">
+        <div class="item-inner">
+          <div class="item-input">
+            <input type="datetime-local">
+          </div>
+        </div>
+      </div>
+                </li>
+              </ul>
+            </div>
+            <div class="content-block-title">现在住址</div>
+            <div class="list-block">
+              <ul>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-input">
+            <input type="text" placeholder="Current Address">
+          </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="content-block-title">搬去住址</div>
+            <div class="list-block">
+              <ul>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-input">
+            <input type="text" placeholder="New Address">
+          </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="content-block-title">所需车型</div>
+            <div class="list-block">
+              <ul>
+                <!-- Single chekbox item -->
+                <li>
+                  <label class="label-checkbox item-content">
+                    <!-- Checked by default -->
+                    <input type="checkbox" name="my-checkbox" value="Books" checked="checked">
+                    <div class="item-media">
+                      <i class="icon icon-form-checkbox"></i>
+                    </div>
+                    <div class="item-inner">
+                      <div class="item-title">2 Tone Van</div>
+                    </div>
+                  </label>
+                </li>
+                <!-- Another chekbox item -->
+                <li>
+                  <label class="label-checkbox item-content">
+                    <input type="checkbox" name="my-checkbox" value="Movies">
+                    <div class="item-media">
+                      <i class="icon icon-form-checkbox"></i>
+                    </div>
+                    <div class="item-inner">
+                      <div class="item-title">4.5 Tone Track</div>
+                    </div>
+                  </label>
+                </li>
+                </div>
+            <div class="content-block-title">所需搬运工</div>
+            <div class="list-block">
+              <ul>
+                <li>
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-input">
+                        <input type="text" placeholder="Any" readonly="readonly" id="tt-picker-sleep-num" />
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            </div>
+        </div>
+  </div>
+</div>
